@@ -50,7 +50,7 @@ jobs:
       run: source tools.sh && (cd ~/ && install_verilator)
 
     - name: Install uncached tools
-      run: (cd .. && git clone https://github.com/SpinalHDL/SpinalHDL.git -b dev)
+      run: (cd .. && git clone https://github.com/jaynerlin/SpinalHDL.git -b dev)
 
     - name: Compile tests
       run: sbt "+test:compile"
